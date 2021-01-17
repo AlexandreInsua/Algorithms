@@ -20,3 +20,20 @@ for i = 2 to A.length
 		j = j - 1
 	A<sub>j + 1</sub> = key
 </pre>
+
+
+## Reverse version 
+In order to create a reverse version of this algorith, it enough with to change the comparation between key and A<sub>j</sub>. 
+
+<pre>
+for i = 2 to A.length
+	key = A<sub>i</sub>
+	j = i - 1
+	while j > 0 and key > A<sub>j</sub> 
+		A<sub>j + 1</sub> = A<sub>j</sub>
+		j = j - 1
+	A<sub>j + 1</sub> = key
+</pre>		
+
+## Cost analysis
+The cost of this algorithm is expressed by <em>O(n<sup>2</sup>)</em> notation. Increasing the length of the array implies an exponential increase in the processing cost.
